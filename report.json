@@ -1,0 +1,112 @@
+{
+  "inputs": {
+    "draft_chars": 1993,
+    "final_chars": 1890
+  },
+  "metrics": {
+    "expression_similarity": {
+      "char_similarity": 0.2833,
+      "token_counts": {
+        "draft": 482,
+        "final": 450
+      },
+      "token_change_rates_vs_draft": {
+        "insert_rate": 0.0145,
+        "delete_rate": 0.0145,
+        "replace_rate": 0.917
+      },
+      "length": {
+        "chars_draft": 1993,
+        "chars_final": 1890,
+        "delta_chars": -103
+      }
+    },
+    "semantic_similarity": {
+      "doc_tfidf_cosine": 0.1841,
+      "para_counts": {
+        "draft": 1,
+        "final": 6
+      },
+      "para_bestmatch_similarity_distribution": {
+        "mean": 0.1263,
+        "q10": 0.1263,
+        "q50": 0.1263,
+        "q90": 0.1263,
+        "bins": {
+          ">=0.8": 0,
+          "0.5~0.8": 0,
+          "0.2~0.5": 0,
+          "<0.2": 1
+        }
+      },
+      "top_para_matches": [
+        {
+          "draft_para": 0,
+          "final_para": 0,
+          "sim": 0.1263
+        }
+      ]
+    },
+    "structural_change": {
+      "heading_counts": {
+        "draft": 0,
+        "final": 0
+      },
+      "heading_set_changes": {
+        "added_sample": [],
+        "removed_sample": [],
+        "common_count": 0
+      },
+      "order_stability_proxy": 0.0,
+      "note": "구조는 제목 패턴 기반의 단순 추정이며, 형식이 정돈될수록 정확도가 상승합니다."
+    },
+    "information_expansion_reduction": {
+      "draft": {
+        "tokens": 482,
+        "unique_tokens": 382,
+        "numbers": 3,
+        "quotes": 8,
+        "paren_groups": 1,
+        "bracket_groups": 0,
+        "urls": 0,
+        "bullets": 0
+      },
+      "final": {
+        "tokens": 450,
+        "unique_tokens": 366,
+        "numbers": 3,
+        "quotes": 12,
+        "paren_groups": 0,
+        "bracket_groups": 0,
+        "urls": 0,
+        "bullets": 0
+      },
+      "delta": {
+        "tokens": -32,
+        "unique_tokens": -16,
+        "numbers": 0,
+        "quotes": 4,
+        "paren_groups": -1,
+        "bracket_groups": 0,
+        "urls": 0,
+        "bullets": 0
+      },
+      "ratio_final_over_draft": {
+        "tokens": 0.9336,
+        "unique_tokens": 0.9581,
+        "numbers": 1.0,
+        "quotes": 1.5,
+        "paren_groups": 0.0,
+        "bracket_groups": 0.0,
+        "urls": 0.0,
+        "bullets": 0.0
+      },
+      "note": "정보 확장/축소는 사실성·품질 판단이 아닌, 정보 요소의 증감 기록(프록시)입니다."
+    }
+  },
+  "policy_notes": [
+    "본 리포트는 AI 사용 여부 판별, 기여도 평가, 품질 평가를 수행하지 않습니다.",
+    "모든 지표는 초본 대비 최종본의 변형을 설명하는 기록 데이터입니다.",
+    "총점·등급·우열 판단을 산출하지 않습니다."
+  ]
+}
