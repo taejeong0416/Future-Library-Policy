@@ -5,12 +5,12 @@
 
 예시를 참고하여, 사용자는 다음 흐름으로 동일한 방식의 리포트를 만들 수 있습니다.
 
-example_draft.txt  +  example_final.txt   (또는 본인 파일)
-            ↓
-compare_process.py 실행
-            ↓
-report.json 생성
-            ↓
+example_draft.txt  +  example_final.txt   (또는 본인 파일)\
+            ↓\
+compare_process.py 실행\
+            ↓\
+report.json 생성\
+            ↓\
 이 뷰어(index.html)에 업로드 → 결과 확인
 
 # 예시 리포트 결과 요약
