@@ -13,7 +13,8 @@
       "token_change_rates_vs_draft": {
         "insert_rate": 0.0145,
         "delete_rate": 0.0145,
-        "replace_rate": 0.917
+        "replace_rate_draft_side": 0.7676,
+        "replace_rate_final_side": 0.7012
       },
       "length": {
         "chars_draft": 1993,
@@ -23,11 +24,11 @@
     },
     "semantic_similarity": {
       "doc_tfidf_cosine": 0.1841,
-      "para_counts": {
+      "block_counts": {
         "draft": 1,
         "final": 6
       },
-      "para_bestmatch_similarity_distribution": {
+      "block_bestmatch_similarity_distribution": {
         "mean": 0.1263,
         "q10": 0.1263,
         "q50": 0.1263,
@@ -39,13 +40,14 @@
           "<0.2": 1
         }
       },
-      "top_para_matches": [
+      "top_block_matches": [
         {
-          "draft_para": 0,
-          "final_para": 0,
+          "draft_block": 0,
+          "final_block": 0,
           "sim": 0.1263
         }
-      ]
+      ],
+      "note": "의미 유사도는 TF-IDF 기반 키워드 유사도이며, 블록(빈줄/제목 경계) 단위로 최대 매칭 분포를 기록합니다."
     },
     "structural_change": {
       "heading_counts": {
@@ -58,7 +60,7 @@
         "common_count": 0
       },
       "order_stability_proxy": 0.0,
-      "note": "구조는 제목 패턴 기반의 단순 추정이며, 형식이 정돈될수록 정확도가 상승합니다."
+      "note": "구조는 제목 패턴 기반 추정이며, 순서 안정성은 공통 제목에 대한 LCS 기반 프록시입니다."
     },
     "information_expansion_reduction": {
       "draft": {
