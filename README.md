@@ -3,6 +3,16 @@
 초본(draft)과 최종본(final)의 변형 과정을 산출한 `report.json`을 **업로드해서 시각화**하는 정적(Static) 웹 뷰어입니다.
 예시 로드를 누르면 리포지토리에 포함된 리포트를 예시로 볼 수 있습니다.
 
+예시를 참고하여, 사용자는 다음 흐름으로 동일한 방식의 리포트를 만들 수 있습니다.
+
+example_draft.txt  +  example_final.txt   (또는 본인 파일)
+            ↓
+compare_process.py 실행
+            ↓
+report.json 생성
+            ↓
+이 뷰어(index.html)에 업로드 → 결과 확인
+
 # 예시 리포트 결과 요약
 1) 표현 유사도 (겉모양 변화)
 
